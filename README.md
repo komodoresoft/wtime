@@ -1,6 +1,8 @@
 # wtime - Unix time command for Windows
-![Build](https://img.shields.io/badge/build-kmak-lightgrey?style=flat-square&logo=c) ![Lang](https://img.shields.io/badge/language-C-blue?style=flat-square&logo=c) ![License](https://img.shields.io/badge/license-GPL-green?style=flat-square) ![Status](https://img.shields.io/badge/status-WIP-orange?style=flat-square)<br>
-*wtime*  is command line utility that measures the execution time of an
+![Build](https://img.shields.io/badge/build-kmak-lightgrey?style=flat-square&logo=c) ![Lang](https://img.shields.io/badge/language-C-blue?style=flat-square&logo=c) ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square) ![Status](https://img.shields.io/badge/status-WIP-orange?style=flat-square)<br>
+*wtime* is a command-line utility for Windows that replicates the behavior of the Unix `time` command.<br>
+It measures the execution time of any command, with support for portable output and Ctrl+C handling.
+
 
 ## Features
 
@@ -23,4 +25,11 @@ kmak make.kmk compile
 ## Usage
 ```bash
 wtime [-p] command [args...]
+```
+
+## Examples
+```bash
+wtime -p test.exe
+wtime notepad.exe
+wtime -p ping localhost
 ```

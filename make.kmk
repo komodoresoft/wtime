@@ -1,0 +1,9 @@
+CC = gcc
+
+task compile
+	cmd $(CC) -o wtime wtime.c
+	cmd $(CC) -o test test.c
+
+task clean
+	cmd del wtime.exe
+	cmd del test.exe
